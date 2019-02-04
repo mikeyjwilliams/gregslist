@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+header {
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 100%;
+  top: 0;
+}
+h1 {
+  margin: .5em;
+  padding-top: .25em;
+  font-size: 1.3em;
+}
+ul {
+  display: inline-flex;
+  margin-top: .5em;
+  padding-top: .25em;
+}
+li {
+    list-style:none;
+    font-size: 1.3em;
+    margin-left: .75em;
+}
+button {
+display: inline-flex;
+}
+a {
+  text-decoration: none;
+  color: purple;
+}
+main {
+ margin-top: 5em;
+}
+/***********************
+helpers
+***********************/
+.pad-l {
+  padding-left: .75em;
+}
+.mar-r {
+  margin-right: .75em;
+}
+.col-third {
+  display: inline-flex;
+  width: 15%;
+}
+.font {
+  font-size: 1em;
+  font-weight: 500;
+}
+/************************
+NAV section
+************************/
+.logo {
+  display:flex;
+  justify-content:space-between;
+}
+/*********
+search-section
+**********/
+.search-section {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+/*** FORM ***/
+  .search-bar {
+    display: inline-flex;
+    align-self:flex-start;
+  }
+  input[type="text"] {
+    border-left-style: outset;
+    border-top-style: outset;
+    height: 2em;
+    padding: .75em;
+    width: 25em;
+  }
+  button[type="submit"] {
+    padding: 0;
+    border-style: none;
+    border: 1px solid #efefef;
+    margin-left: .25em;
+    border-radius: 3px;
+  }
+  img[src*="glass.png"] {
+    width: 4.1vh;
+    padding: 0;
+    border-radius:5%;
+  }
+  /****** need browser types to use**/
+  ::-webkit-input-placeholder {
+    text-indent:.275em;
+    font-weight: bold;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    text-indent:.275em;
+    font-weight: bold;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+    text-indent:.275em;
+    font-weight: bold;
+  }
+  :-ms-input-placeholder {
+    text-indent:.275em;
+    font-weight: bold;
+  }
+/************************
+prev-next section
+************************/
+.prev-next {
+  margin-top: 2.5em;
+  display: flex;
+}
+.btn {
+  padding: .5em .75em;
+  border: 1px solid lightgrey;
+  background-color: white;
+}
+.l {
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+.r {
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.numbers {
+  padding-left: 1.75em;
+  padding-right: 1.75em
+}
+.prev-next  a,
+.prev-next  a:hover
+.prev-next  a:visited {
+  color: black;
+}
+/*****************************
+Search-results
+******************************/
+.search-results {
+  margin-top: 2.75em;
+  display: flex;
+
+}
+.results {
+  display: flex;
+  flex-direction: column;
+}
+.search-results p {
+  display: inline-flex;
+  color: grey;
+}
+date + a {
+  color: blue;
+  font-weight: bolder;
+  padding-left: .75em;
+  padding-right: .75em;
+}
